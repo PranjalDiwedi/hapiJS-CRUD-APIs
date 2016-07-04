@@ -1,0 +1,163 @@
+
+1. Total of 100,000 request with 1,000 concurrent requests
+
+Benchmarking localhost (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        Apache/2.4.7
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /project:3000
+Document Length:        284 bytes
+
+Concurrency Level:      1000
+Time taken for tests:   26.648 seconds
+Complete requests:      100000
+Failed requests:        0
+Non-2xx responses:      100000
+Total transferred:      46300000 bytes
+HTML transferred:       28400000 bytes
+Requests per second:    3752.69 [#/sec] (mean)
+Time per request:       266.475 [ms] (mean)
+Time per request:       0.266 [ms] (mean, across all concurrent requests)
+Transfer rate:          1696.77 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0   11 124.4      1    3006
+Processing:     2   86 1009.6      7   25638
+Waiting:        1   86 1009.6      7   25638
+Total:          5   96 1061.6      8   26641
+
+Percentage of the requests served within a certain time (ms)
+  50%      8
+  66%      9
+  75%      9
+  80%     10
+  90%     11
+  95%     12
+  98%    207
+  99%   1005
+ 100%  26641 (longest request)
+
+2. Total of 100,000 request with 20,000 concurrent requests
+
+Benchmarking localhost (be patient)
+Completed 10000 requests
+Completed 20000 requests
+Completed 30000 requests
+Completed 40000 requests
+Completed 50000 requests
+Completed 60000 requests
+Completed 70000 requests
+Completed 80000 requests
+Completed 90000 requests
+Completed 100000 requests
+Finished 100000 requests
+
+
+Server Software:        Apache/2.4.7
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /project:3000
+Document Length:        284 bytes
+
+Concurrency Level:      20000
+Time taken for tests:   306.188 seconds
+Complete requests:      100000
+Failed requests:        32023
+   (Connect: 0, Receive: 10665, Length: 10691, Exceptions: 10667)
+Non-2xx responses:      89310
+Total transferred:      41350530 bytes
+HTML transferred:       25364040 bytes
+Requests per second:    326.60 [#/sec] (mean)
+Time per request:       61237.501 [ms] (mean)
+Time per request:       3.062 [ms] (mean, across all concurrent requests)
+Transfer rate:          131.88 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  242 684.8      2    3013
+Processing:     2 12518 36944.5     11  305063
+Waiting:        0  446 9775.4     10  305062
+Total:          7 12760 37221.9     14  306071
+
+Percentage of the requests served within a certain time (ms)
+  50%     14
+  66%     20
+  75%    219
+  80%   1008
+  90%  79008
+  95%  109714
+  98%  134609
+  99%  146883
+ 100%  306071 (longest request)
+
+3. Total of 10,00,000 request with 20,000 concurrent requests
+
+Benchmarking localhost (be patient)
+Completed 100000 requests
+Completed 200000 requests
+Completed 300000 requests
+Completed 400000 requests
+Completed 500000 requests
+Completed 600000 requests
+Completed 700000 requests
+Completed 800000 requests
+Completed 900000 requests
+Completed 1000000 requests
+Finished 1000000 requests
+
+
+Server Software:        Apache/2.4.7
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /project:3000
+Document Length:        284 bytes
+
+Concurrency Level:      20000
+Time taken for tests:   157.868 seconds
+Complete requests:      1000000
+Failed requests:        45638
+   (Connect: 0, Receive: 15212, Length: 15212, Exceptions: 15214)
+Non-2xx responses:      984803
+Total transferred:      455963789 bytes
+HTML transferred:       279684052 bytes
+Requests per second:    6334.40 [#/sec] (mean)
+Time per request:       3157.364 [ms] (mean)
+Time per request:       0.158 [ms] (mean, across all concurrent requests)
+Transfer rate:          2820.56 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  133 1335.6      2   63170
+Processing:     3 2035 13715.6     12  156736
+Waiting:        0  388 2810.1     11  120457
+Total:          5 2168 13851.8     15  157743
+
+Percentage of the requests served within a certain time (ms)
+  50%     15
+  66%     27
+  75%     36
+  80%    223
+  90%    455
+  95%   3020
+  98%  20119
+  99%  103585
+ 100%  157743 (longest request)
+
+
